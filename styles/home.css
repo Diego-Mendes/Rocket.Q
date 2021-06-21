@@ -1,0 +1,58 @@
+.content{
+    /*dividindo em colunas*/
+    display: grid;
+    
+    /*Setando as porcentagens das colunas vertical:*/
+    grid-template-columns: 60% 40%;
+    
+    /*coluna na horizontal(114px):*/
+    grid-template-rows: 11.4rem 1fr; /*pega uma fração do espaço que sobrar*/
+
+    grid-template-areas: 
+    'header header'
+    'left right';
+}
+
+header{
+    grid-area: header;
+}
+
+#bg{
+    grid-area: left;
+    /*manda a imagem não se repetir e faz ela se encaixar na div que está*/
+    background: url(/RocketQ/image/Ilustracao.svg) no-repeat top/contain;
+}
+
+main{
+    grid-area: right;
+    
+    display: flex;
+    align-items: center;
+}
+
+main .container{
+    /*pode ter 100% mas sempre da preferencia pro valor menor*/
+    width: min(36.6rem 100%);
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 2.8rem);
+    color: var(--black);
+    
+    margin-bottom: 2.4rem;
+}
+
+
+
+input{
+    border: 0.2rem solid var(--grey-blue);
+    padding: 0 1.6rem;
+    border-radius: .8rem;
+}
+
+input, button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+}

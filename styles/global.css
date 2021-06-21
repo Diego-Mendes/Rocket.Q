@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+html{
+    --black: #0D114F;
+    --blue: #3485FF;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue:#E0ECFF;
+    --overlay: #040911;
+    --background: #FBFCFF;
+    --icons-details: #A5B0C1;
+
+    --grey-dark: #4D5E77;
+    --grey-blue:#A1B2CD;
+    --grey-medium: #D3D9E2;
+    --grey-light: #E5EAF1;
+
+    --hover-blue:#5699FF;
+    --hover-red:#EA4B65;
+    --hover-grey: #8794A7;
+
+    /* 1rem = 16px = 100% (user agente)*/
+    font-size: 62,5%; /*10px*/
+}
+
+
+
+body{
+    height: 100vh; /*view height (100% da tela altura)*/
+    background-color: var(--background);
+}
+
+body, button, input, textarea{
+   /*clamp = intervalo de tamanho
+   (tamanho min, tamanho padrão, tamanho max)*/
+
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content header{
+    width: 80%;
+
+}
+
+.content header img{
+    width: 16.7rem;
+    margin: 3.5rem auto;
+}
+
+/*oculta label:*/
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    /*(top, botttom, left e right):*/
+    clip-path: (0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+input, button, .button{
+    border-radius: .8rem;
+    height: 5rem;
+}
+
+button, .button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 0; /*espaçamento entre linhas*/
+
+    display: flex;
+
+    align-items: center;/*alinha no centro (vertical)*/
+    justify-content: center; /*alinha no centro (horizontal)*/
+
+    background: var(--blue);
+    color: var(--white);
+
+    /*tempo de transição*/
+    transition: filter .2s;
+
+    cursor: pointer; /*fica com a mãozinha no mouse*/
+}
+
+button:hover, .button:hover{
+
+    filter: brightness(1.2);/*aplica um brilho*/
+}
+
+button > img
+.button > img {
+margin-right: 1rem;
+width: 2rem;
+
+}
+
+.button.outlined,
+.button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
