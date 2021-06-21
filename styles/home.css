@@ -20,7 +20,7 @@ header{
 #bg{
     grid-area: left;
     /*manda a imagem não se repetir e faz ela se encaixar na div que está*/
-    background: url(/RocketQ/image/Ilustracao.svg) no-repeat top/contain;
+    background: url(/image/Ilustracao.svg) no-repeat top/contain;
 }
 
 main{
