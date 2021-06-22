@@ -27,12 +27,13 @@ html{
     --hover-grey: #8794A7;
 
     /* 1rem = 16px = 100% (user agente)*/
-    font-size: 62,5%; /*10px*/
+    font-size: 62.5%; /*10px*/
 }
 
 
 
 body{
+   display: flex;
     height: 100vh; /*view height (100% da tela altura)*/
     background-color: var(--background);
 }
