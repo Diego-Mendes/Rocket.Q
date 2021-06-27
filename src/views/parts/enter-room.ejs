@@ -1,0 +1,31 @@
+<section>
+    <h2>Entre como participante</h2>
+    
+    <form action="/enterroom" method="POST">
+        <!--label usado para referenciar algo. acessibilidade/motores de busca:-->
+        <label class="sr-only" for="room-id">Código da sala</label>
+        <input type="number" id="room-id" name="roomId" placeholder="Código da sala">
+        <a href="">
+            <button>
+                <img src="image/buttons/log.svg" alt="entrar na sala">
+                Entrar na sala
+            </button>
+        </a>
+
+    </form>
+
+</section>
+
+<div class="separator">
+    <div></div>
+    <div>ou</div>
+    <div></div>
+</div>  
+
+<section>
+    <h2>Crie sua própria sala, de forma fácil</h2>
+    <a href="/create-pass" class="button outlined">
+        <img src="image/buttons/users.svg" alt="criar sala"> 
+        Criar sala
+    </a>
+</section>
